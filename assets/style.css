@@ -380,3 +380,11 @@ footer .shell{border-top:1px solid rgba(246,243,237,.14);padding-top:var(--s4)}
    podstatnou část. Tady se vejde celý snímek a zbytek plochy zůstane
    neutrální. */
 .show--cele .slide img{object-fit:contain;background:#0e1113}
+
+/* 14. 10. 2026: fotky z inzerátu mají v rohu vpálené logo RE/MAX a mají jen 1024 px.
+   Galerie je proto ukazuje celé (bez ořezu) a nikdy širší než originál. */
+.show,.show+.thumbs{max-width:1024px;margin-inline:auto}
+.show__stage{aspect-ratio:3/2}
+@media(max-width:640px){.show__stage{aspect-ratio:3/2}}
+.slide img{object-fit:contain}
+.thumb{height:64px}
